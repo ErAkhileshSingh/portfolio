@@ -1,6 +1,6 @@
 // Typing Effect
 const typedText = document.querySelector(".typed-text");
-const phrases = ["AI/ML Engineer  ", "Python Developer  ", "Tech Innovator "];
+const phrases = ["Generative AI  ", "Python Developer  ", "Tech Innovator "];
 let i = 0, j = 0, isDeleting = false, currentPhrase = "";
 
 function type() {
