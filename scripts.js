@@ -31,9 +31,18 @@ AOS.init({
   duration: 1000
 });
 
-// Back to Top Button
+// Scroll Effects
+const navbar = document.querySelector(".navbar");
 const topBtn = document.querySelector(".back-to-top");
 window.addEventListener("scroll", () => {
+  // Navbar Scroll
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+
+  // Back to Top Button
   if (window.scrollY > 500) {
     topBtn.style.display = "block";
   } else {
